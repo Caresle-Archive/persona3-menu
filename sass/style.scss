@@ -1,0 +1,46 @@
+$background-light: #2495ff;
+$background-dark: #003c60;
+$background-item-selected: #043860;
+$text-primary: #ffc44a;
+$white: #fff;
+
+
+* {
+	font-family: sans-serif;
+}
+
+main {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-areas: "header main" "menuarea main"
+	"stats-general main" "stats-level main"
+	"stats-money buttons-container";
+}
+
+#header {
+	grid-area: header;
+}
+
+#menu {
+	grid-area: menuarea;
+}
+
+#stats-general {
+	grid-area: stats-general;
+}
+
+#stats-level {
+	grid-area: stats-level;
+}
+
+#stats-money {
+	grid-area: stats-money;
+}
+
+#main-text {
+	grid-area: main;
+}
+
+#buttons-container {
+	grid-area: buttons-container;
+}
