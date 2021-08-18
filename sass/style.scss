@@ -1,12 +1,17 @@
-$background-light: #2495ff;
-$background-dark: #003c60;
-$background-item-selected: #043860;
-$text-primary: #ffc44a;
-$white: #fff;
+@use 'display';
+@use 'text';
 
+@use 'variables' as var;
 
 * {
 	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	font-size: 16px;
+	background-color: var.$background-light;
 }
 
 main {

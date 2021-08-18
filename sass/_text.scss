@@ -1,0 +1,17 @@
+@use 'variables' as var;
+
+.text--primary {
+	color: var.$text-primary;
+}
+
+.text--gray {
+	color: var.$text-gray;
+}
+
+.text--white {
+	color: var.$white;
+}
+
+.text--uppercase {
+	text-transform: uppercase;
+}

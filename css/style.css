@@ -1,5 +1,37 @@
+.d-flex, .flex-center {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.text--primary {
+  color: #ffc44a;
+}
+
+.text--gray {
+  color: #5b8eab;
+}
+
+.text--white {
+  color: #fff;
+}
+
+.text--uppercase {
+  text-transform: uppercase;
+}
+
 * {
   font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  font-size: 16px;
+  background-color: #2495ff;
 }
 
 main {
