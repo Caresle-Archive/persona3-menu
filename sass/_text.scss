@@ -12,6 +12,18 @@
 	color: var.$white;
 }
 
+.text--bold {
+	font-weight: 700;
+}
+
 .text--uppercase {
 	text-transform: uppercase;
+}
+
+.text__menu--selected {
+	color: var.$white;
+}
+
+.text__menu--unselected {
+	color: var.$background-item-selected;
 }

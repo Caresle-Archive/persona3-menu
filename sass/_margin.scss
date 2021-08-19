@@ -1,0 +1,20 @@
+/* margin font-size * #/2 */
+
+@use 'variables' as var;
+
+
+.ml-1 {
+	margin-left: var.$font-size * .5;
+}
+
+.ml-2 {
+	margin-left: var.$font-size;
+}
+
+.ml-3 {
+	margin-left: var.$font-size * 1.5;
+}
+
+.ml-4 {
+	margin-left: var.$font-size * 2;
+}

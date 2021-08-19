@@ -1,0 +1,27 @@
+/* 
+	br = border-radius
+	br-pos-# = # * border-radius size
+*/
+
+@use 'variables' as var;
+
+.br-topr-1 {
+	border-top-right-radius: var.$border-radius;
+}
+
+.br-topr-2 {
+	border-top-right-radius: var.$border-radius * 2;
+}
+
+.br-topr-3 {
+	border-top-right-radius: var.$border-radius * 3;
+}
+
+.br-topr-4 {
+	border-top-right-radius: var.$border-radius * 4;
+}
+
+.br-right-1 {
+	@extend .br-topr-1;
+	border-bottom-right-radius: var.$border-radius;
+}

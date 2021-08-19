@@ -1,6 +1,10 @@
 $background-light: #2495ff;
 $background-dark: #003c60;
 $background-item-selected: #043860;
-$text-primary: #ffc44a;
+$primary: #ffc44a;
+$text-primary: $primary;
 $text-gray: #5b8eab;
 $white: #fff;
+
+$font-size: 16px;
+$border-radius: 4px;

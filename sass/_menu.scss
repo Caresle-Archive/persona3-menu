@@ -1,0 +1,26 @@
+@use 'variables' as var;
+
+.menu__item {
+	width: 200px;
+	height: 24px;
+}
+
+.menu__item--selected {
+	background-color: var.$background-item-selected;
+}
+
+.menu__item--selected:hover {
+	cursor: pointer;
+}
+
+.menu__box {
+	width: 12px;
+	height: 12px;
+	background-color: var.$primary;
+}
+
+.menu__box--deselected {
+	@extend .menu__box;
+	background-color: var.$background-item-selected;
+}
+
