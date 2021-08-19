@@ -1,5 +1,9 @@
-.d-flex, .flex-align-center, .flex-center {
+.d-flex, .flex-justify-center, .flex-align-end, .flex-align-center, .flex-center {
   display: flex;
+}
+
+.fd-col {
+  flex-direction: column;
 }
 
 .flex-center {
@@ -11,12 +15,36 @@
   align-items: center;
 }
 
+.flex-align-end {
+  align-items: flex-end;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
 .text--primary {
   color: #ffc44a;
 }
 
 .text--gray {
   color: #5b8eab;
+}
+
+.text--dark {
+  color: #202020;
+}
+
+.text--blue {
+  color: #2495ff;
+}
+
+.text--very-dark-blue {
+  color: #043860;
+}
+
+.text--dark-blue {
+  color: #003c60;
 }
 
 .text--white {
@@ -79,10 +107,22 @@
   margin-left: 32px;
 }
 
+.mt-1 {
+  margin-top: 8px;
+}
+
 /* 
 	br = border-radius
 	br-pos-# = # * border-radius size
 */
+.br-1 {
+  border-radius: 4px;
+}
+
+.br-2 {
+  border-radius: 8px;
+}
+
 .br-topr-1, .br-right-1 {
   border-top-right-radius: 4px;
 }
@@ -101,6 +141,51 @@
 
 .br-right-1 {
   border-bottom-right-radius: 4px;
+}
+
+.p-1 {
+  padding: 8px;
+}
+
+.p-2 {
+  padding: 16px;
+}
+
+.p-3 {
+  padding: 24px;
+}
+
+.p-4 {
+  padding: 32px;
+}
+
+.card {
+  background-color: #69afff;
+}
+
+.bar {
+  width: 140px;
+  height: 10px;
+  background-color: #202020;
+  border-radius: 8px;
+  position: relative;
+}
+
+.bar-color, .bar-blue, .bar-yellow {
+  width: 132px;
+  height: 6px;
+  border-radius: 8px;
+  position: absolute;
+  top: 2px;
+  left: 4px;
+}
+
+.bar-yellow {
+  background-color: #ffc44a;
+}
+
+.bar-blue {
+  background-color: #868efd;
 }
 
 * {
@@ -130,6 +215,10 @@ main {
 
 #stats-general {
   grid-area: stats-general;
+  height: 120px;
+}
+#stats-general > div {
+  height: 32px;
 }
 
 #stats-level {

@@ -1,10 +1,20 @@
-$background-light: #2495ff;
-$background-dark: #003c60;
-$background-item-selected: #043860;
 $primary: #ffc44a;
+$blue: #2495ff;
+$dark-blue: #003c60;
+$very-dark-blue: #043860;
+$dark: #202020;
+$white: #fff;
+$purple: #868efd;
+
+$background-light: $blue;
+$background-dark: $dark-blue;
+$background-item-selected: $very-dark-blue;
+
 $text-primary: $primary;
 $text-gray: #5b8eab;
-$white: #fff;
+$text-dark-blue: $dark-blue;
+
+$card-background: #69afff;
 
 $font-size: 16px;
 $border-radius: 4px;

@@ -1,0 +1,36 @@
+@use 'variables' as var;
+
+$bar-width: 140px;
+$bar-height: 10px;
+$radius: 8px;
+
+.card {
+	background-color: var.$card-background;
+}
+
+.bar {
+	width: $bar-width;
+	height: $bar-height;
+	background-color: var.$dark;
+	border-radius: $radius;
+	position: relative;
+}
+
+.bar-color {
+	width: 132px;
+	height: 6px;
+	border-radius: $radius;
+	position: absolute;
+	top: 2px;
+	left: 4px;
+}
+
+.bar-yellow {
+	@extend .bar-color;
+	background-color: var.$primary;
+}
+
+.bar-blue {
+	@extend .bar-color;
+	background-color: var.$purple;
+}

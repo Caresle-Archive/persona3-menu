@@ -3,6 +3,8 @@
 @use 'menu';
 @use 'margin';
 @use 'border';
+@use 'padding';
+@use 'stats_card';
 
 @use 'variables' as var;
 
@@ -35,6 +37,11 @@ main {
 
 #stats-general {
 	grid-area: stats-general;
+	height: 120px;
+	
+	> div {
+		height: 32px;
+	}
 }
 
 #stats-level {
