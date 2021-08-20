@@ -1,4 +1,4 @@
-.d-flex, .flex-justify-center, .flex-align-end, .flex-align-center, .flex-center {
+.d-flex, .flex-justify-end, .flex-end, .flex-justify-center, .flex-align-end, .flex-align-center, .flex-center {
   display: flex;
 }
 
@@ -15,12 +15,16 @@
   align-items: center;
 }
 
-.flex-align-end {
+.flex-align-end, .flex-end {
   align-items: flex-end;
 }
 
 .flex-justify-center {
   justify-content: center;
+}
+
+.flex-justify-end, .flex-end {
+  justify-content: flex-end;
 }
 
 .text--primary {
@@ -47,6 +51,14 @@
   color: #003c60;
 }
 
+.text--purple {
+  color: #868efd;
+}
+
+.text--italic {
+  font-style: italic;
+}
+
 .text--white {
   color: #fff;
 }
@@ -55,7 +67,11 @@
   font-weight: 700;
 }
 
-.text--center {
+.text--v-rotate {
+  transform: rotate(-90deg);
+}
+
+.text-- .text--center {
   text-align: center;
 }
 

@@ -24,6 +24,14 @@
 	color: var.$text-dark-blue;
 }
 
+.text--purple {
+	color: var.$purple;
+}
+
+.text--italic {
+	font-style: italic;
+}
+
 .text--white {
 	color: var.$white;
 }
@@ -31,6 +39,12 @@
 .text--bold {
 	font-weight: 700;
 }
+
+.text--v-rotate {
+	transform: rotate(-90deg);
+}
+
+.text--
 
 .text--center {
 	text-align: center;

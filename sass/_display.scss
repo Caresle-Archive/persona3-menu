@@ -26,3 +26,13 @@
 	@extend .d-flex;
 	justify-content: center;
 }
+
+.flex-justify-end {
+	@extend .d-flex;
+	justify-content: flex-end;
+}
+
+.flex-end {
+	@extend .flex-align-end;
+	@extend .flex-justify-end;
+}
