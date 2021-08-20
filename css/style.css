@@ -55,6 +55,10 @@
   font-weight: 700;
 }
 
+.text--center {
+  text-align: center;
+}
+
 .text--uppercase {
   text-transform: uppercase;
 }
@@ -109,6 +113,10 @@
 
 .mt-1 {
   margin-top: 8px;
+}
+
+.mt-2 {
+  margin-top: 16px;
 }
 
 /* 
@@ -196,7 +204,7 @@
 html, body {
   margin: 0;
   font-size: 16px;
-  background-color: #2495ff;
+  background: linear-gradient(90deg, #ffc44a 6%, rgba(0, 0, 0, 0) 6%), linear-gradient(45deg, #2495ff 66%, #003c60 66%);
 }
 
 main {

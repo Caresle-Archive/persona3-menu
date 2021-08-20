@@ -16,7 +16,7 @@
 html, body {
 	margin: 0;
 	font-size: var.$font-size;
-	background-color: var.$background-light;
+	background: linear-gradient(90deg, var.$primary 6%, rgba(0, 0, 0, 0) 6%), linear-gradient(45deg, var.$blue 66%, var.$dark-blue 66%);
 }
 
 main {
