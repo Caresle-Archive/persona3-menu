@@ -1,0 +1,57 @@
+@use 'variables' as var;
+
+.btn {
+	width: 24px;
+	height: 24px;
+	content: "";
+	background-color: var.$soft-dark;
+	border-radius: 50%;
+	position: relative;
+}
+
+.cross {
+	position: absolute;
+	left: 10px;
+	top: 4px;
+}
+
+.cross-element {
+	background-color: var.$white;
+	width: 4px;
+	height: 16px;
+	border-radius: 4px;
+	position: absolute;
+}
+
+.cross-right {
+	transform: rotate(45deg);
+}
+
+.cross-left {
+	transform: rotate(-45deg);
+}
+
+.circle-container {
+	position: absolute;
+	left: 4px;
+	top: 4px;
+}
+
+.circle {
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	position: absolute;
+}
+
+.circle-white {
+	background-color: var.$white;
+}
+
+.circle-black {
+	background-color: var.$soft-dark;
+	width: 12px;
+	height: 12px;
+	left: 2px;
+	top: 2px;
+}

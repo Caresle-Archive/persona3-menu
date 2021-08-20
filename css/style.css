@@ -71,7 +71,7 @@
   transform: rotate(-90deg);
 }
 
-.text-- .text--center {
+.text--center {
   text-align: center;
 }
 
@@ -125,6 +125,22 @@
 
 .ml-4 {
   margin-left: 32px;
+}
+
+.mr-1 {
+  margin-right: 8px;
+}
+
+.mr-2 {
+  margin-right: 16px;
+}
+
+.mr-3 {
+  margin-right: 24px;
+}
+
+.mr-4 {
+  margin-right: 32px;
 }
 
 .mt-1 {
@@ -212,6 +228,62 @@
   background-color: #868efd;
 }
 
+.btn {
+  width: 24px;
+  height: 24px;
+  content: "";
+  background-color: #33322e;
+  border-radius: 50%;
+  position: relative;
+}
+
+.cross {
+  position: absolute;
+  left: 10px;
+  top: 4px;
+}
+
+.cross-element {
+  background-color: #fff;
+  width: 4px;
+  height: 16px;
+  border-radius: 4px;
+  position: absolute;
+}
+
+.cross-right {
+  transform: rotate(45deg);
+}
+
+.cross-left {
+  transform: rotate(-45deg);
+}
+
+.circle-container {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+}
+
+.circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle-white {
+  background-color: #fff;
+}
+
+.circle-black {
+  background-color: #33322e;
+  width: 12px;
+  height: 12px;
+  left: 2px;
+  top: 2px;
+}
+
 * {
   font-family: sans-serif;
   box-sizing: border-box;
@@ -220,6 +292,7 @@
 html, body {
   margin: 0;
   font-size: 16px;
+  overflow: hidden;
   background: linear-gradient(90deg, #ffc44a 6%, rgba(0, 0, 0, 0) 6%), linear-gradient(45deg, #2495ff 66%, #003c60 66%);
 }
 
