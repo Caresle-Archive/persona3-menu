@@ -16,6 +16,8 @@
 
 html, body {
 	margin: 0;
+	box-sizing: border-box;
+	height: 100%;
 	font-size: var.$font-size;
 	overflow: hidden;
 	background: linear-gradient(90deg, var.$primary 6%, rgba(0, 0, 0, 0) 6%), linear-gradient(45deg, var.$blue 66%, var.$dark-blue 66%);
@@ -23,7 +25,8 @@ html, body {
 
 main {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: 40% 60%;
+	grid-template-rows: 70px 172px 128px 128px 96px;
 	grid-template-areas: "header main" "menuarea main"
 	"stats-general main" "stats-level main"
 	"stats-money buttons-container";
@@ -40,7 +43,6 @@ main {
 #stats-general {
 	grid-area: stats-general;
 	height: 120px;
-	
 	> div {
 		height: 32px;
 	}
@@ -60,4 +62,23 @@ main {
 
 #buttons-container {
 	grid-area: buttons-container;
+}
+
+@media only screen and (max-width: 770px) {
+	main {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 70px 172px 128px 128px 96px;
+		grid-template-areas: "header" "menuarea"
+		"stats-general" "stats-level"
+		"stats-money";
+	}
+
+	.card {
+		max-width: 375px;
+	}
+
+	#main-text, #buttons-container {
+		display: none;
+	}
 }

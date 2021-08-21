@@ -27,6 +27,30 @@
   justify-content: flex-end;
 }
 
+.text--big-1 {
+  font-size: 2rem;
+}
+
+.text--big-2 {
+  font-size: 3rem;
+}
+
+.text--big-3 {
+  font-size: 4rem;
+}
+
+.text--big-4 {
+  font-size: 5rem;
+}
+
+.text--opacity-1 {
+  opacity: 1;
+}
+
+.text--opacity-2 {
+  opacity: 0.5;
+}
+
 .text--primary {
   color: #ffc44a;
 }
@@ -291,6 +315,8 @@
 
 html, body {
   margin: 0;
+  box-sizing: border-box;
+  height: 100%;
   font-size: 16px;
   overflow: hidden;
   background: linear-gradient(90deg, #ffc44a 6%, rgba(0, 0, 0, 0) 6%), linear-gradient(45deg, #2495ff 66%, #003c60 66%);
@@ -298,7 +324,8 @@ html, body {
 
 main {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 70px 172px 128px 128px 96px;
   grid-template-areas: "header main" "menuarea main" "stats-general main" "stats-level main" "stats-money buttons-container";
 }
 
@@ -332,6 +359,23 @@ main {
 
 #buttons-container {
   grid-area: buttons-container;
+}
+
+@media only screen and (max-width: 770px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 172px 128px 128px 96px;
+    grid-template-areas: "header" "menuarea" "stats-general" "stats-level" "stats-money";
+  }
+
+  .card {
+    max-width: 375px;
+  }
+
+  #main-text, #buttons-container {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

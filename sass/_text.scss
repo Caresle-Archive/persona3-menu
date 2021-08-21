@@ -1,5 +1,29 @@
 @use 'variables' as var;
 
+.text--big-1 {
+	font-size: 2rem;
+}
+
+.text--big-2 {
+	font-size: 3rem;
+}
+
+.text--big-3 {
+	font-size: 4rem;
+}
+
+.text--big-4 {
+	font-size: 5rem;
+}
+
+.text--opacity-1 {
+	opacity: 1;
+}
+
+.text--opacity-2 {
+	opacity: .5;
+}
+
 .text--primary {
 	color: var.$text-primary;
 }
